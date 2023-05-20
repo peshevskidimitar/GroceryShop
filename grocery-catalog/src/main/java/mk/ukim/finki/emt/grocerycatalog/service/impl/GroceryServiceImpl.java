@@ -33,6 +33,7 @@ public class GroceryServiceImpl implements GroceryService {
                 groceryForm.getNutritionalValue(),
                 groceryForm.getQuantity(),
                 groceryForm.getInStockAmount(),
+                groceryForm.getFoodCategory(),
                 groceryForm.getPrice()
         );
         groceryRepository.save(grocery);

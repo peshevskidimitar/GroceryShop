@@ -4,6 +4,7 @@ import mk.ukim.finki.emt.grocerycatalog.domain.model.Grocery;
 import mk.ukim.finki.emt.grocerycatalog.domain.repository.GroceryRepository;
 import mk.ukim.finki.emt.sharedkernel.domain.financial.Currency;
 import mk.ukim.finki.emt.sharedkernel.domain.financial.Money;
+import mk.ukim.finki.emt.sharedkernel.domain.nutritional.FoodCategory;
 import mk.ukim.finki.emt.sharedkernel.domain.nutritional.MeasurementUnit;
 import mk.ukim.finki.emt.sharedkernel.domain.nutritional.NutritionalValue;
 import mk.ukim.finki.emt.sharedkernel.domain.nutritional.Quantity;
@@ -29,6 +30,7 @@ public class DataInitializer {
                 NutritionalValue.of(2., 15., 0., 50.),
                 Quantity.of(1, MeasurementUnit.KILOGRAMS),
                 10,
+                FoodCategory.VEGETABLE,
                 Money.valueOf(Currency.MKD, 75.)
         );
         Grocery grocery2 = Grocery.build(
@@ -37,6 +39,7 @@ public class DataInitializer {
                 NutritionalValue.of(1., 20., 0.5, 75.),
                 Quantity.of(2, MeasurementUnit.KILOGRAMS),
                 30,
+                FoodCategory.FRUIT,
                 Money.valueOf(Currency.MKD, 50.)
         );
 
